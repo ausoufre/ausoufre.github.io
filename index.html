@@ -65,37 +65,6 @@ show: 1
 My group's work has been recognized with an Innovation Award at Michelin Campus in 2019 on recycling tires by cryogenic grinding for sound insulation.
 </p>
 
-<h3>Selected Papers</h3>
-
-<p style="font-size: 18px">
-A selection of papers that represent my research interests and style.
-</p>
-
-<table>
-{% for paper in site.data.papers.notable %}
-
-  <tr><td style="padding:10px">
-      {% if paper.image %}
-      <a href="{{paper.pdf}}"><img width="150px" style="min-width:100px" src="{{paper.image}}"></a>
-      {% else %}
-      <a href="{{paper.pdf}}"><img height="75px" style="min-width:100px" src="https://avatar.tobi.sh/{{paper.title}}"></a>
-
-      {% endif %}
-</td><td style="padding:10px">
-<a class="paper" href="{{paper.pdf}}">
-{{paper.title}}
-</a><br>
-{{paper.authors}}.<br>
-{{paper.conference}} <br>
-
-<br>
-
-</td></tr>
-
-{% endfor %}
-</table>
-
-
 <h3>Contact</h3>
 
 
